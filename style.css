@@ -71,4 +71,61 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
   }
+
+
+
+@media (min-width: 1025px) {
+  .accordion li {
+    width: 50rem;
+  }
+
+  .modal-content {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  .accordion li {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .modal-content {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .accordion li {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .modal-content {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+
+  #close-modal {
+    font-size: 1.25rem;
+    right: 0.5rem;
+    top: 0.25rem;
+  }
+}
+
   

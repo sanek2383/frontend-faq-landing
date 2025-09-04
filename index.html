@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQ: JS, React, ООП</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>Вопросы для собеседований</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="favicon/android-chrome-512x512.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon/favicon-16x16.png"
+		/>
 
-  <!-- Навигация по табам -->
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="JavaScript">JavaScript</button>
-    <button class="tab-btn" data-tab="React">React</button>
-    <button class="tab-btn" data-tab="ООП и Архитектура">ООП и Архитектура</button>
-  </div>
+		<!-- Apple Touch Icon (для iPhone) -->
+		<link
+			rel="apple-touch-icon"
+			href="favicon/apple-touch-icon.png"
+			sizes="180x180"
+		/>
 
-  <!-- Контейнер для вопросов -->
-  <div id="faq-container"></div>
+		<!-- Современные браузеры -->
+		<link
+			rel="manifest"
+			href="site.webmanifest"
+		/>
+		<title>Тесты: JS, React, ООП</title>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+	<body>
+		<h1>Вопросы для собеседований</h1>
 
-  <!-- Модальное окно -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span id="close-modal">&times;</span>
-      <h3 id="modal-title"></h3>
-      <p id="modal-answer"></p>
-    </div>
-  </div>
+		<!-- Навигация по табам -->
+		<div class="tabs">
+			<button
+				class="tab-btn active"
+				data-tab="JavaScript"
+			>
+				JavaScript
+			</button>
+			<button
+				class="tab-btn"
+				data-tab="React"
+			>
+				React
+			</button>
+			<button
+				class="tab-btn"
+				data-tab="ООП и Архитектура"
+			>
+				ООП и Архитектура
+			</button>
+		</div>
 
-  <script src="script.js"></script>
-</body>
+		<!-- Контейнер для вопросов -->
+		<div id="faq-container"></div>
+
+		<!-- Модальное окно -->
+		<div
+			id="modal"
+			class="modal hidden"
+		>
+			<div class="modal-content">
+				<span id="close-modal">&times;</span>
+				<h3 id="modal-title"></h3>
+				<p id="modal-answer"></p>
+			</div>
+		</div>
+		<button
+			id="scrollToTop"
+			aria-label="Наверх"
+		>
+			↑
+		</button>
+		<script src="script.js"></script>
+	</body>
 </html>

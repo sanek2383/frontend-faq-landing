@@ -51,9 +51,6 @@ h1 {
 	background: #e0e0e0;
 }
 
-/* #faq-container{
-  margin-inline: auto;
-} */
 
 /* Модалка */
 .modal {
@@ -177,5 +174,52 @@ h1 {
   .tab-btn {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
+  }
+}
+
+/* Кнопка "Наверх" */
+#scrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  background: #fdb931;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Показывать при прокрутке */
+#scrollToTop.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 767px) {
+  #scrollToTop {
+    bottom: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-height: 500px) {
+  #scrollToTop {
+    bottom: 0.5rem;
+    right: 0.5rem;
   }
 }

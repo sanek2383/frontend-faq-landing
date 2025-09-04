@@ -87,3 +87,23 @@ document.addEventListener('DOMContentLoaded', () => {
 	const firstTab = document.querySelector('.tab-btn.active').dataset.tab
 	loadTab(firstTab)
 })
+
+// Кнопка "Наверх"
+const scrollToTopBtn = document.getElementById('scrollToTop')
+
+window.addEventListener('scroll', () => {
+	// Показывать, если прокрутили больше 300px
+	if (window.scrollY > 300) {
+		scrollToTopBtn.classList.add('visible')
+	} else {
+		scrollToTopBtn.classList.remove('visible')
+	}
+})
+
+// Плавная прокрутка наверх
+scrollToTopBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	})
+})

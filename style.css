@@ -38,6 +38,7 @@ h1 {
 .accordion li {
 	width: 50rem;
 	margin-bottom: 0.5rem;
+  margin-inline: auto;
 	cursor: pointer;
 	background: #fff;
 	padding: 1rem;
@@ -49,6 +50,10 @@ h1 {
 .accordion li:hover {
 	background: #e0e0e0;
 }
+
+/* #faq-container{
+  margin-inline: auto;
+} */
 
 /* Модалка */
 .modal {

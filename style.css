@@ -1,131 +1,176 @@
 body {
-    font-family: sans-serif;
-    background: 
-		radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
-		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-    padding: 2rem;
-    color: #333;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .section {
-    margin-bottom: 2rem;
-  }
-  
-  .accordion {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .accordion li {
-    width: 50rem;
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .accordion li:hover {
-    background: #e0e0e0;
-  }
-  
-  /* Модалка */
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,0.6);
-    z-index: 10;
-  }
-  
-  .modal.hidden {
-    display: none;
-  }
-  
-  .modal-content {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-  }
-  
-  #close-modal {
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
+	font-family: sans-serif;
+	background: radial-gradient(
+			ellipse farthest-corner at right bottom,
+			#fedb37 0%,
+			#fdb931 8%,
+			#9f7928 30%,
+			#8a6e2f 40%,
+			transparent 80%
+		),
+		radial-gradient(
+			ellipse farthest-corner at left top,
+			#ffffff 0%,
+			#ffffac 8%,
+			#d1b464 25%,
+			#5d4a1f 62.5%,
+			#5d4a1f 100%
+		);
+	padding: 2rem;
+	color: #333;
+}
 
+h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
 
+.section {
+	margin-bottom: 2rem;
+}
+
+.accordion {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.accordion li {
+	width: 50rem;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+	background: #fff;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	transition: background 0.3s;
+}
+
+.accordion li:hover {
+	background: #e0e0e0;
+}
+
+/* Модалка */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+}
+
+.modal.hidden {
+	display: none;
+}
+
+.modal-content {
+	background: #fff;
+	padding: 2rem;
+	border-radius: 8px;
+	width: 90%;
+	max-width: 500px;
+	position: relative;
+}
+
+#close-modal {
+	position: absolute;
+	right: 1rem;
+	top: 0.5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
 
 @media (min-width: 1025px) {
-  .accordion li {
-    width: 50rem;
-  }
+	.accordion li {
+		width: 50rem;
+	}
 
-  .modal-content {
-    font-size: 1rem;
-  }
+	.modal-content {
+		font-size: 1rem;
+	}
 }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    padding: 1.5rem;
-  }
+	body {
+		padding: 1.5rem;
+	}
 
-  .accordion li {
-    width: 90%;
-    font-size: 0.95rem;
-  }
+	.accordion li {
+		width: 90%;
+		font-size: 0.95rem;
+	}
 
-  .modal-content {
-    font-size: 0.95rem;
-  }
+	.modal-content {
+		font-size: 0.95rem;
+	}
 }
-
 
 @media (max-width: 767px) {
-  body {
-    padding: 1rem;
-  }
+	body {
+		padding: 1rem;
+	}
 
-  h1 {
-    font-size: 1.5rem;
-  }
+	h1 {
+		font-size: 1.5rem;
+	}
 
-  .accordion li {
-    width: 90%;
-    font-size: 0.9rem;
-    padding: 0.75rem;
-  }
+	.accordion li {
+		width: 90%;
+		font-size: 0.9rem;
+		padding: 0.75rem;
+	}
 
-  .modal-content {
-    font-size: 0.9rem;
-    padding: 1.5rem;
-  }
+	.modal-content {
+		font-size: 0.9rem;
+		padding: 1.5rem;
+	}
 
-  #close-modal {
-    font-size: 1.25rem;
-    right: 0.5rem;
-    top: 0.25rem;
-  }
+	#close-modal {
+		font-size: 1.25rem;
+		right: 0.5rem;
+		top: 0.25rem;
+	}
 }
 
-  
+/* Стили для табов */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #fdb931;
+  background: #fff;
+  color: #8a6e2f;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #fef7e0;
+}
+
+.tab-btn.active {
+  background: #fdb931;
+  color: white;
+  font-weight: bold;
+}
+
+/* Адаптив для табов */
+@media (max-width: 767px) {
+  .tab-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}

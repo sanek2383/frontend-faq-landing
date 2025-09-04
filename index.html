@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQ: JS & React</title>
+  <title>FAQ: JS, React, ООП</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Частые вопросы с собеседований</h1>
+  <h1>Вопросы для собеседований</h1>
+
+  <!-- Навигация по табам -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="JavaScript">JavaScript</button>
+    <button class="tab-btn" data-tab="React">React</button>
+    <button class="tab-btn" data-tab="ООП и Архитектура">ООП и Архитектура</button>
+  </div>
+
+  <!-- Контейнер для вопросов -->
   <div id="faq-container"></div>
 
   <!-- Модальное окно -->
